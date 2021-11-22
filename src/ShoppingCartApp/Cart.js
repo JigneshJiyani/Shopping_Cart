@@ -27,7 +27,7 @@ class Cart extends React.Component {
             </ul>
             <div>
               <br />
-              <Button onClick={() => { RemoveCart(i) }}>Remove</Button>
+              <Button classname="btn btn-outline-danger"onClick={() => { RemoveCart(i) }}>Remove</Button>
               <br />
             </div>
             <br />
