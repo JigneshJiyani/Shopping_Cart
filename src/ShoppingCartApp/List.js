@@ -32,10 +32,11 @@ class List extends React.Component {
                                         </Card.Text>
                                         <p>{item.count}</p>
                                         <Col>
-                                            <Button type="submit" onClick={() => Increase(item.id)}> +</Button>
-                                            <Button type="submit" onClick={() => Decrease(item.id)}>-</Button>
+                                            <Button classname="btn btn-outline-success"type="submit" onClick={() => Increase(item.id)}> +</Button>
+                                            <Button classname="btn btn-outline-danger" type="submit" onClick={() => Decrease(item.id)}>-</Button>
                                        
                                             <Button
+                                                classname="btn btn-outline-info"
                                                 type="submit" onClick={() => handleClick(item)}>Add To Cart
                                             </Button>{Cart}
                                         </Col>
