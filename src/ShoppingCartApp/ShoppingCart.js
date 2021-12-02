@@ -23,13 +23,6 @@ function MainSlide() {
     }
 
     const handleSave = (e) => {
-        // const Data = JSON.stringify(finalData)
-        // localStorage.setItem("formData", Data) 
-        // localStorage.setItem("formData", JSON.stringify(finalData)); 
-        // var storedNames = JSON.parse(localStorage.getItem("formData"));
-        // const form = window.localStorage.getItem("formData",[])
-        // console.log("saved data from local storage" , form)
-        // e.preventDefault()
         let First_Name = document.getElementById("fname").value;
 
         let Last_Name = document.getElementById("lname").value;
