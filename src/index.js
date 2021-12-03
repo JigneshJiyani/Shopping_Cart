@@ -172,17 +172,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './MockApiDemo/css/index.css'
-import { makeServer } from './MockApiDemo/Data/server';
-import Routers from './MockApiDemo/components/Routes';
+import './RecoilApp/css/index.css'
+// import { makeServer } from './MockApiDemo/Data/server';
+// import Routers from './MockApiDemo/components/Routes';
+// import User from './RecoilApp/User'
+import App from './App';
 
-if (process.env.NODE_ENV === 'development') {
-  makeServer({ environment: 'development' });
-} else {
-  makeServer();
-}
+
+// if (process.env.NODE_ENV === 'development') {
+//   makeServer({ environment: 'development' });
+// } else {
+//   makeServer();
+// }
 
 ReactDOM.render(
-    <Routers />,
+    <App/>,
   document.getElementById('root')
 );
